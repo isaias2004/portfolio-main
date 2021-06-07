@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73b4fe424a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <ul class="lista">
+        <a href="#inicio"><li class="link-lista">Inicio</a></li>
+        <a href="#tecnologias"><li class="link-lista">Tecnologías</a></li>
+        <a href="#experiencia"><li class="link-lista">Experiencia</a></li>
+        <a href="#contacto"><li class="link-lista">Contacto</a></li>
+    </ul>
+    <header id="inicio">
+        <div class="container-header">
+            <div class="opacity"></div>
+                <video autoplay="autoplay" loop muted src="/video-banner/production ID_4464847.mp4"></video>
+                <h1>Isaías Lawicki</h1>
+                <h2>Programador | Diseñador Web</h2>
+        </div>
+    </header>
+    <section class="inicio">
+        <h2>Sobre mí</h2>
+        <div class="container-inicio">
+            <img src="/images/undraw_chore_list_re_2lq8.png" width="500px">
+            <div class="container-inicio-txt">
+                <p>Soy un estudiante en <b>Desarrollo Front End</b>, me apasiona aprender sobre aplicaciones y tecnologías modernas, seguir avanzado para pulir mis conocimientos sin límite!</p>
+                <p>A lo largo de mi estudio/trabajo hice proyectos tantos personales como también freelancer. En la siguiente sección se encuentran las tecnologías que utilize en cada una de ellas. </p>
+            </div>
+        </div>
+    </section>
+    <section id="tecnologias" class="tecnologias">
+        <h2>Tecnologías</h2>
+        <div class="container-tecnologias">
+            <div class="row-tecnologias">
+                <i class="fab fa-html5 tooltipped" data-position="top" data-tooltip="100%"></i>
+                <i class="fab fa-css3-alt tooltipped" data-position="top" data-tooltip="100%"></i>
+                <i class="fab fa-js-square tooltipped" data-position="top" data-tooltip="50%"></i>
+                <i class="fab fa-git-alt tooltipped" data-position="left" data-tooltip="70%"></i>
+                <i class="fab fa-bootstrap tooltipped" data-position="top" data-tooltip="90%"></i>
+                <i class="fab fa-react tooltipped" data-position="right" data-tooltip="30%"></i>
+                <i class="fab fa-sass tooltipped" data-position="left" data-tooltip="90%"></i>
+                <i class="fab fa-less tooltipped" data-position="bottom" data-tooltip="90%"></i>
+                <i class="fab fa-wordpress tooltipped" data-position="right" data-tooltip="70%"></i>
+            </div>
+            <img src="/images/undraw_version_control_re_mg66.png" width="500px">
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let element = document.querySelectorAll('.tooltipped');
+            let asd = M.Tooltip.init(element, );
+        });
+    </script>
+</body>
+</html>
