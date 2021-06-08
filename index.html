@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Staatliches&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Open+Sans&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/73b4fe424a.js" crossorigin="anonymous"></script>
@@ -19,19 +22,28 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
+
 <body>
     <ul class="lista">
-        <a href="#inicio"><li class="link-lista">Inicio</a></li>
-        <a href="#tecnologias"><li class="link-lista">Tecnologías</a></li>
-        <a href="#experiencia"><li class="link-lista">Experiencia</a></li>
-        <a href="#contacto"><li class="link-lista">Contacto</a></li>
+        <a href="#inicio">
+            <li class="link-lista">Inicio
+        </a></li>
+        <a href="#tecnologias">
+            <li class="link-lista">Tecnologías
+        </a></li>
+        <a href="#experiencia">
+            <li class="link-lista">Experiencia
+        </a></li>
+        <a href="#contacto">
+            <li class="link-lista">Contacto
+        </a></li>
     </ul>
     <header id="inicio">
         <div class="container-header">
             <div class="opacity"></div>
-                <video autoplay="autoplay" loop muted src="/video-banner/production ID_4464847.mp4"></video>
-                <h1>Isaías Lawicki</h1>
-                <h2>Programador | Diseñador Web</h2>
+            <video autoplay="autoplay" loop muted src="/video-banner/production ID_4464847.mp4"></video>
+            <h1>Isaías Lawicki</h1>
+            <h2>Programador | Diseñador Web</h2>
         </div>
     </header>
     <section class="inicio">
@@ -39,8 +51,10 @@
         <div class="container-inicio">
             <img src="/images/undraw_chore_list_re_2lq8.png" width="500px">
             <div class="container-inicio-txt">
-                <p>Soy un estudiante en <b>Desarrollo Front End</b>, me apasiona aprender sobre aplicaciones y tecnologías modernas, seguir avanzado para pulir mis conocimientos sin límite!</p>
-                <p>A lo largo de mi estudio/trabajo hice proyectos tantos personales como también freelancer. En la siguiente sección se encuentran las tecnologías que utilize en cada una de ellas. </p>
+                <p>Soy un estudiante en <b>Desarrollo Front End</b>, me apasiona aprender sobre aplicaciones y
+                    tecnologías modernas, seguir avanzado para pulir mis conocimientos sin límite!</p>
+                <p>A lo largo de mis estudios/trabajos hice proyectos tanto personales como también <b>freelancer</b>.
+                    En la siguiente sección se encuentran las tecnologías que utilize en cada una de ellas. </p>
             </div>
         </div>
     </section>
@@ -61,11 +75,74 @@
             <img src="/images/undraw_version_control_re_mg66.png" width="500px">
         </div>
     </section>
+    <section id="experiencia" class="experiencia">
+        <h2>Experiencia</h2>
+        <div class="container-experiencia">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <a href="https://isaias2004.github.io/logistica/" target="_blank"><img class="imagen" src="/images/laptop1.png"></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="https://isaias2004.github.io/storex/" target="_blank"><img class="imagen" src="/images/laptop05.png"></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="https://isaias2004.github.io/barberia-vallario/" target="_blank"><img class="imagen" src="/images/laptop.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-titulo">
+        <h2 class="titulo-contacto">Contactos</h2>
+    </div>
+    <footer id="contacto" class="contacto">
+        <div class="contact">
+            <div class="container-contacto">
+                <img src="/images/undraw_contact_us_15o2 (1).png">
+            </div>
+        </div>
+        <div class="container-formulario">
+            <form class="formulario">
+                    <input type="text" placeholder="Username" name="" id="">
+                    <input type="email" placeholder="Email" name="" id="">
+                    <textarea name="" placeholder="Message..." id="textarea" cols="60" rows="80" ref="Large" ></textarea>
+                        <a type="submit" href="">Submit</a>
+            </form>
+            <div class="redes">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fas fa-envelope-square"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
+    <div class="derechos">
+        <p>© 2021 | Todos los derechos reservados</p>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
             let element = document.querySelectorAll('.tooltipped');
-            let asd = M.Tooltip.init(element, );
+            let asd = M.Tooltip.init(element,);
         });
     </script>
 </body>

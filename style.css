@@ -61,7 +61,7 @@ body {
     letter-spacing: 5px;
     font-family: 'Staatliches', cursive;
     position: relative;
-    z-index: 999;
+    z-index: 900;
     font-weight: 800;
     padding-top: 200px;
 }
@@ -69,7 +69,7 @@ body {
 .container-header h2{
     font-size: 35px;
     position: relative;
-    z-index: 999;
+    z-index: 900;
     font-weight: 200;
 
 }
@@ -133,6 +133,8 @@ body {
 }
 
 .container-tecnologias{
+    max-width: 1050px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
 }
@@ -149,6 +151,7 @@ body {
 }
 
 .row-tecnologias i{
+    cursor: pointer;
     color: gray;
     font-size: 70px;
     padding: 20px;
@@ -188,4 +191,204 @@ body {
 
 .fa-wordpress:hover{
     color:#207196;
+}
+
+.experiencia h2{
+    margin: 0 auto;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 100px;
+    color: #CCCCCC;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.imagen{
+    cursor: pointer;
+    width: 500px;
+    object-fit: cover;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.container-titulo{
+    max-width: 1075px;
+    margin: auto;
+}
+
+
+.titulo-contacto{
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    /* padding: 100px; */
+    color: #CCCCCC;
+}
+
+.container-contacto img{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.contacto{
+    box-shadow: 0px -1px 27px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -1px 27px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 27px -6px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    padding: 50px 25px 50px 0px;
+    margin-left: 200px;
+    margin-right:200px ;
+    margin-top: 150px;
+    display: flex;
+}
+
+.formulario input{
+    background: #89B0AE !important;
+    border-radius:  16px !important;
+}
+
+.formulario textarea{
+    background: #89B0AE;
+    border: none;
+    border-radius: 16px ;
+}
+
+#textarea{
+    height: 100px;
+}
+
+.formulario textarea::placeholder{
+    border: none;
+    color: white;
+    padding: 10px;
+
+    /* height: 50px !important; */
+}
+
+.formulario input::placeholder{
+    color: white;
+    padding: 10px;
+}
+
+.formulario a {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 24px;
+    text-align: center;
+    background: #89B0AE;
+}
+
+.formulario a {
+    background: #89B0AE;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.formulario a:hover{
+    transition: 0.5s all ;
+    background: #546b6a;
+}
+
+.redes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes i{
+    transition: 0.5s all;
+    cursor: pointer;
+    font-size: 20px;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.redes i:hover{ 
+    box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+}
+
+
+.derechos{
+    margin-top: 150px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Staatliches', cursive;;
+    background: #39374E;
+    color: white;
 }
