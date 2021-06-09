@@ -368,6 +368,7 @@ body {
 }
 
 .redes i{
+    color: black;
     transition: 0.5s all;
     cursor: pointer;
     font-size: 20px;
