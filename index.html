@@ -138,10 +138,10 @@
             </div>
             <div class="col l6 m12">
                 <form class="formulario">
-                        <input type="text" placeholder="Username" name="" id="">
-                        <input type="email" placeholder="Email" name="" id="">
+                        <input type="text" placeholder="Username" name="" id="nombre">
+                        <input type="email" placeholder="Email" name="" id="email">
                         <textarea name="" placeholder="Message..." id="textarea" cols="60" rows="80" ref="Large" ></textarea>
-                            <a type="submit" href="">Submit</a>
+                            <a type="submit" onclick='return enviarFormulario();' value='Enviar' href="">Submit</a>
                 </form>
                 <div class="redes">
                     <a href="https://github.com/isaias2004" target="_blank"><i class="fab fa-github"></i></a>
@@ -160,7 +160,7 @@
     <script>
         var slideIndex = 0;
         showSlides();
-
+        
         function showSlides() {
             let i;
             let slides = document.getElementsByClassName("mySlides");
@@ -172,7 +172,7 @@
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 7000); // Change image every 2 seconds
         }
-
+        
         document.addEventListener('DOMContentLoaded', function () {
             let element = document.querySelectorAll('.tooltipped');
             let asd = M.Tooltip.init(element,);
