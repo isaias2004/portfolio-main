@@ -421,6 +421,10 @@ body {
     color: white;
 }
 
+#back-top{
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .lista{
         display: none;
@@ -432,9 +436,11 @@ body {
     }
 
     .container-header h1{
-        margin-top: 0;
-        margin-bottom: 0;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        margin: 0 45px;
         letter-spacing: 5px;
+        font-size: 45px;
         font-family: 'Staatliches', cursive;
         position: relative;
         z-index: 900;
@@ -442,8 +448,12 @@ body {
     }
     
     .container-header h2{
-        margin-top: 0;
-        font-size: 25px;
+        /* border-top: 2px solid white; */
+        letter-spacing: 1px;
+        padding: 10px 0;
+        border-bottom: 2px solid white;
+        margin: 0 45px;
+        font-size: 17px;
         position: relative;
         z-index: 900;
         font-weight: 200;
@@ -563,5 +573,16 @@ body {
     #row1 i{
         font-size: 60px;
         padding: 10px;
+    }
+
+    #back-top{
+        opacity: 0.7;
+        color: #5e6472;
+        font-size: 35px;
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
     }
 }
