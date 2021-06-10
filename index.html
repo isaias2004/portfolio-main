@@ -60,14 +60,14 @@
             </div>
         </div>
     </section>
-    <div class="container">
+    <div  id="tecnologias" class="container">
         <h2 class="titulo-contacto">Tecnologías</h2>
     </div>
-    <section id="tecnologias" class="container">
+    <section class="container">
         <div class="container-tecnologias">
-            <div class="row">
+            <div id="row1" class="row">
                 <div class="col s4">
-                    <i class="fab fa-html5 col m4 tooltipped" data-position="top" data-tooltip="100%"></i>
+                    <i class="fab fa-html5 icon col m4 tooltipped" data-position="top" data-tooltip="100%"></i>
                 </div>
                 <div class="col s4">
                     <i class="fab fa-css3-alt col m4 tooltipped" data-position="top" data-tooltip="100%"></i>
@@ -97,40 +97,46 @@
             <img class="imagen" src="images/undraw_version_control_re_mg66.png">
         </div>
     </section>
-    <div class="container">
+    <div id="experiencia" class="container">
         <h2 class="titulo-contacto">Experiencia</h2>
     </div>
-    <section id="experiencia" class="experiencia">
+    <section class="experiencia">
         <div class="container-experiencia">
             <div class="container">
                 <div class="container">
 
                     <div class="mySlides fade center">
+                        <h2>Logistica 29 de abril</h2>
+                        <p>Web diseñada y desarrollada por mi, utilizé <b>HTML5</b> y <b>CSS3</b> para este proyecto.</p>
                         <a href="https://isaias2004.github.io/logistica/" target="_blank"><img class="imagen" src="images/laptop1.png"></a>
                     </div>
 
                     <div class="mySlides fade center">
+                        <h2>Store X</h2>
+                        <p>Tienda Online de ropa, diseñada y desarrollada por mi. Utilize <b>Bootstrap</b> y <b>JavaScript</b> para este proyecto.</p>
                         <a href="https://isaias2004.github.io/storex/" target="_blank"><img class="imagen" src="images/laptop05.png"></a>
                     </div>
 
                     <div class="mySlides fade center">
+                        <h2>Barberia Vallario</h2>
+                        <p>Web sobre una barbería donde podes ver diferentes servicios. Utilize <b>HTML5</b> y <b>CSS3</b> para este proyecto.  </p>
                         <a href="https://isaias2004.github.io/barberia-vallario/" target="_blank"><img class="imagen" src="images/laptop.png"></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container">
+    <div id="contacto" class="container">
         <h2 class="titulo-contacto">Contactos</h2>
     </div>
-    <footer id="contacto" class="container">
-        <div class="row">
+    <footer class="container">
+        <div id="row2" class="row">
             <div class=" col l6 m12">
                 <div class="container-contacto">
                     <img src="images/undraw_contact_us_15o2 (1).png">
                 </div>
             </div>
-            <div class=" col l6 m12">
+            <div class="col l6 m12">
                 <form class="formulario">
                         <input type="text" placeholder="Username" name="" id="">
                         <input type="email" placeholder="Email" name="" id="">
@@ -163,7 +169,7 @@
             slideIndex++;
             if (slideIndex > slides.length) { slideIndex = 1 }
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 2 seconds
+            setTimeout(showSlides, 7000); // Change image every 2 seconds
         }
 
         document.addEventListener('DOMContentLoaded', function () {
