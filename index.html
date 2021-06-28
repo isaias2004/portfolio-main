@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -136,17 +137,26 @@
     </div>
     <footer class="container">
         <div id="row2" class="row">
-            <div class=" col l6 m12">
+            <div class="col l6 m12">
                 <div class="container-contacto">
                     <img src="images/undraw_contact_us_15o2 (1).png">
                 </div>
             </div>
-            <div class="col l6 m12">
+            <div id="formulario" class="col l6 m12">
                 <form class="formulario">
-                        <input type="text" placeholder="Username" name="" id="nombre">
-                        <input type="email" placeholder="Email" name="" id="email">
-                        <textarea name="" placeholder="Message..." id="textarea" cols="60" rows="80" ref="Large" ></textarea>
-                            <a type="submit" onclick='return enviarFormulario();' value='Enviar' href="">Submit</a>
+                        <!-- <input type="text" placeholder="Username" name="" id="nombre"> -->
+                        <input type="text" placeholder="Username" id="itNombre" class="campo" /><br /> 
+                        <div id="mensaje1" class="errores">Escribe tu nombre!</div>
+
+                        <!-- <input type="email" placeholder="Email" name="" id="email"> -->
+                        <input type="text" placeholder="Email" id="itMail" class="campo" /><br />
+                        <div id="mensaje2" class="errores">Escribe un email valido! </div>
+
+                        <!-- <textarea name="" placeholder="Message..." id="textarea" cols="60" rows="80" ref="Large" ></textarea> -->
+                        <input type="text" placeholder="Message..." id="itAsunto" class="campo" />
+                        <div id="mensaje3" class="errores">Escribe un mensaje! </div>
+
+                        <a type="submit" id="bEnviar" value="Enviar Datos" class="boton">Submit</a>
                 </form>
                 <div class="redes">
                     <a href="https://github.com/isaias2004" target="_blank"><i class="fab fa-github"></i></a>
@@ -181,6 +191,34 @@
         document.addEventListener('DOMContentLoaded', function () {
             let element = document.querySelectorAll('.tooltipped');
             let asd = M.Tooltip.init(element,);
+        });
+
+        var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+
+        $(document).ready(function(){
+            $("#bEnviar").click(function(){
+                var nombre = $("#itNombre").val();
+                var correo = $("#itMail").val();
+                var asunto = $("#itAsunto").val();
+
+                if(nombre == ""){
+                    $("#mensaje1").fadeIn();
+                    return false;
+                }else{
+                    $("#mensaje1").fadeOut();
+                    if(correo == "" || !expr.test(correo)){
+                        $("#mensaje2").fadeIn();
+                        return false;
+                    }else{
+                        $("#mensaje2").fadeOut();
+                        if(asunto == ""){
+                            $("#mensaje3").fadeIn();
+                            return false;
+                        }
+                    }
+               }
+
+            });
         });
     </script>
 </body>
