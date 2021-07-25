@@ -128,6 +128,7 @@
                         <p>Web Desarrollada por mí, Aún no es responsive. Utilize <b>HTML5</b> y <b>CSS3</b> para este proyecto en producción </p>
                         <a href="https://isaias2004.github.io/iglesia-el-encuentro/" target="_blank"><img class="imagen" src="images/laptop-igle.png"></a>
                     </div>
+                    <!-- <div id="number">1</div> -->
                 </div>
             </div>
         </div>
@@ -144,15 +145,10 @@
             </div>
             <div id="formulario" class="col l6 m12">
                 <form class="formulario">
-                        <!-- <input type="text" placeholder="Username" name="" id="nombre"> -->
                         <input type="text" placeholder="Username" id="itNombre" class="campo" /><br /> 
                         <div id="mensaje1" class="errores">Escribe tu nombre!</div>
-
-                        <!-- <input type="email" placeholder="Email" name="" id="email"> -->
                         <input type="text" placeholder="Email" id="itMail" class="campo" /><br />
                         <div id="mensaje2" class="errores">Escribe un email valido! </div>
-
-                        <!-- <textarea name="" placeholder="Message..." id="textarea" cols="60" rows="80" ref="Large" ></textarea> -->
                         <input type="text" placeholder="Message..." id="itAsunto" class="campo" />
                         <div id="mensaje3" class="errores">Escribe un mensaje! </div>
 
@@ -161,7 +157,7 @@
                 <div class="redes">
                     <a href="https://github.com/isaias2004" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/isaias-lawicki-9050671b6/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a><i class="fas fa-envelope-square tooltipped" data-position="top" data-tooltip="Lawicki76@gmail.com"></i></a>
+                    <a href="mailto:lawicki76@gmail.com"><i class="fas fa-envelope-square tooltipped" data-position="top" data-tooltip="Lawicki76@gmail.com"></i></a>
                     <a href="https://twitter.com/lawi_isaias target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
@@ -192,6 +188,14 @@
             let element = document.querySelectorAll('.tooltipped');
             let asd = M.Tooltip.init(element,);
         });
+
+// contador en proceso
+        // var n = 2;
+        // var l = document.getElementById("number");
+        // window.setInterval(function(){
+        // l.innerHTML = n;
+        // n++;
+        // },7000);
 
         var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
 
