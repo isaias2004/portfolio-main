@@ -168,39 +168,53 @@ body {
 }
 
 .fa-html5:hover{
+    transition: all 0.3s ease;
     color: #DD4B25;
 }
 
 .fa-css3-alt:hover{
+    transition: all 0.3s ease;
     color:#146EB0;
 }
 
 .fa-js-square:hover{
+    transition: all 0.3s ease;
     color: #F7DF1E;
 }
 
 .fa-git-alt:hover{
+    transition: all 0.3s ease;
     color:#E94E31;
 }
 
 .fa-bootstrap:hover{
+    transition: all 0.3s ease;
     color: #533B78;
 }
 
 .fa-react:hover{
+    transition: all 0.3s ease;
     color: #146EB0;
 }
 
 .fa-sass:hover{
+    transition: all 0.3s ease;
     color: #C76494;
 }
 
 .fa-less:hover{
+    transition: all 0.3s ease;
     color:#2A4C80;
 }
 
 .fa-wordpress:hover{
+    transition: all 0.3s ease;
     color:#207196;
+}
+
+.fa-angular:hover{
+    transition: all 0.3s ease;
+    color:#BD002E;
 }
 
 .experiencia h2{
@@ -449,7 +463,6 @@ body {
     background:rgb(187, 187, 187);
     color: white;
 } */
-
 
 
 
