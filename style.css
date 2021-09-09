@@ -314,6 +314,14 @@ body {
   to {opacity: 1}
 }
 
+.paginador i{
+    color: #7e7e7e;
+}
+
+.paginador .negro{
+    color: black;
+}
+
 .container-titulo{
     max-width: 1075px;
     margin: auto;
@@ -348,24 +356,25 @@ body {
 
 .formulario input{
     background: #89B0AE !important;
-    border-radius:  16px !important;
+    border-radius: 16px !important;
 }
 
-.formulario textarea{
-    background: #89B0AE;
-    border: none;
-    border-radius: 16px ;
+#itNombre{
+    padding-left: 15px;
+    width: 95%;
 }
 
-#textarea{
-    height: 100px;
+#itMail{
+    padding-left: 15px;
+    width: 95%;
 }
 
-.formulario textarea::placeholder{
-    border: none;
-    color: white;
-    padding: 10px;
+#itAsunto{
+    padding-left: 15px;
+    width: 95%;
+
 }
+
 
 .formulario input::placeholder{
     color: white;
@@ -453,17 +462,6 @@ body {
     padding: 10px;
     position: absolute;
 }
-
-/* #number{
-    text-align: center;
-    margin: 0 45%;
-    padding: 3px;
-    border: 1px solid gray;
-    border-radius: 3px;
-    background:rgb(187, 187, 187);
-    color: white;
-} */
-
 
 
 @media only screen and (max-width: 768px) {
