@@ -448,7 +448,7 @@ body {
     padding: 10px;
     text-align: center;
     letter-spacing: 2px;
-    font-family: 'Staatliches', cursive;;
+    font-family: 'Staatliches', cursive;
     background: #39374E;
     color: white;
 }
@@ -478,6 +478,8 @@ body {
 }
 
 .cv a{
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
     padding: 9px;
     color: white;
     border-radius: 9px;
